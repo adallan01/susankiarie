@@ -204,7 +204,7 @@ section { position: relative; padding-block: clamp(80px, 10vw, 152px); }
 .bring .bio { grid-column: 1 / span 5; margin-top: clamp(40px, 5vw, 72px); display: grid; gap: 18px; align-self: start; align-content: start; }
 .bring .bio p { color: var(--ink-2); max-width: 54ch; }
 .bring .bio p:first-child { color: var(--ink); font-size: 1.12rem; }
-.pillars { grid-column: 7 / span 6; margin-top: clamp(40px, 5vw, 72px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; }
+.pillars { align-self: start; align-content: start; grid-column: 7 / span 6; margin-top: clamp(40px, 5vw, 72px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; }
 .pillars li { padding: 20px 0 24px; border-top: 1px solid var(--rule); min-width: 0; }
 .pillars h3 { font-family: var(--serif); font-size: 1.45rem; line-height: 1.12; }
 .pillars p { margin-top: 8px; font-size: 0.9rem; line-height: 1.5; color: var(--ink-2); }
@@ -695,6 +695,46 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
   .node.hot b { font-size: 3rem; }
 }
 
+/* ---------- Photographs of Susan ---------- */
+.portrait.has-photo { background: radial-gradient(70% 55% at 50% 42%, rgba(212, 165, 74, 0.26), transparent 70%), linear-gradient(180deg, #172238 0%, #0B111C 100%); }
+.portrait.has-photo img { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: auto; object-fit: contain; -webkit-mask-image: linear-gradient(to bottom, #000 74%, transparent 99%); mask-image: linear-gradient(to bottom, #000 74%, transparent 99%); filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.45)); }
+.pt-mark { position: absolute; left: 22px; top: 18px; font: 600 1.15rem/1 var(--serif); letter-spacing: 0.02em; color: rgba(245, 247, 250, 0.7); pointer-events: none; z-index: 2; }
+.pt-mark i { font-style: normal; color: var(--copper); }
+
+.cut-photo { position: relative; margin: 28px 0 0; display: grid; justify-items: center; }
+.cut-photo::before { content: ""; position: absolute; left: 10%; right: 10%; bottom: 18px; height: 46px; border-radius: 50%; background: radial-gradient(closest-side, rgba(212, 165, 74, 0.38), transparent); filter: blur(4px); }
+.cut-photo img { position: relative; width: auto; max-width: 100%; max-height: 600px; height: auto; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%); mask-image: linear-gradient(to bottom, #000 82%, transparent 100%); filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35)); }
+.cut-photo figcaption { position: relative; margin-top: 4px; font: 600 0.7rem/1.3 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--on-navy-3); display: flex; align-items: center; gap: 10px; }
+.cut-photo figcaption::before { content: ""; width: 22px; height: 1px; background: var(--copper); }
+.lead-l .cut-photo img { max-height: 560px; }
+
+.sig.with-award { grid-template-columns: minmax(0, 2fr) minmax(0, 6fr) minmax(0, 3fr); align-items: center; }
+.sig.with-award .award { max-width: 320px; justify-self: end; }
+.award { margin: 0; perspective: 900px; }
+.award-frame { transform: rotateY(var(--ry, -8deg)) rotateX(var(--rx, 2deg)); transition: transform .6s cubic-bezier(.2,.7,.1,1); transform-style: preserve-3d; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(212, 165, 74, 0.45); }
+.award-frame img { display: block; width: 100%; height: auto; }
+.award figcaption { margin-top: 14px; font: 600 0.7rem/1.4 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-navy-3); }
+
+.sign { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+.sign img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 1px solid var(--copper); box-shadow: 0 0 0 4px rgba(212, 165, 74, 0.12); }
+.sign b { display: block; font: 500 1.1rem/1.2 var(--serif); color: var(--on-navy); }
+.sign span { display: block; font-size: 0.82rem; color: var(--on-navy-3); margin-top: 2px; }
+
+@media (max-width: 1020px) {
+  .sig.with-award { grid-template-columns: minmax(0, 1fr); }
+  .award { max-width: 420px; }
+  .cut-photo img { max-height: 520px; }
+}
+@media (max-width: 600px) {
+  .cut-photo img, .lead-l .cut-photo img { max-height: 440px; }
+  .award-frame { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .award-frame { transform: none !important; } }
+@media (max-width: 1020px) {
+  .hero-figure { order: -1; margin: 0 0 36px; max-width: 300px; }
+  .hero-figure figcaption { display: none; }
+}
+
 </style>
 </head>
 <body>
@@ -733,18 +773,9 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
     </div>
     <figure class="hero-figure">
       <span class="corner tl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
-      <div class="portrait">
-        <svg viewBox="0 0 400 500" role="img" aria-label="SNK monogram for Susan Njeri Kiarie, with a stepped line marking each career move from 2005 to 2026">
-          <defs><pattern id="g" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="var(--navy-rule)" stroke-width="0.6"/></pattern></defs>
-          <rect width="400" height="500" fill="url(#g)"/>
-          <text x="24" y="40" font-family="DM Sans, sans-serif" font-weight="600" font-size="10.5" letter-spacing="1.8" fill="var(--on-navy-3)">NAIROBI · 1°17′S 36°49′E</text>
-          <text x="376" y="40" text-anchor="end" font-family="DM Sans, sans-serif" font-weight="600" font-size="10.5" letter-spacing="1.8" fill="var(--on-navy-3)">20+ YRS</text>
-          <text x="200" y="262" text-anchor="middle" font-family="Clash Grotesk, Hanken Grotesk, sans-serif" font-weight="600" font-size="168" letter-spacing="-4" fill="var(--on-navy)">SN<tspan font-style="italic" fill="var(--copper)">K</tspan></text>
-          <path class="draw" d="M30 448 H35.1 V433 H99.5 V418 H120.1 V403 H147.1 V388 H180.7 V373 H233.5 V358 H285.0 V343 H339.1 V328 H357.2 V313 H370" fill="none" stroke="var(--copper)" stroke-width="1.6"/><circle cx="35.1" cy="433" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="99.5" cy="418" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="120.1" cy="403" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="147.1" cy="388" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="180.7" cy="373" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="233.5" cy="358" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="285.0" cy="343" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="339.1" cy="328" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/><circle cx="357.2" cy="313" r="2.6" fill="var(--navy)" stroke="var(--copper)" stroke-width="1.2"/>
-          <text x="30" y="478" font-family="DM Sans, sans-serif" font-weight="600" font-size="10.5" fill="var(--on-navy-3)">2005</text>
-          <text x="200" y="478" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="600" font-size="9.5" letter-spacing="1.6" fill="var(--on-navy-3)">CAREER MOVES</text>
-          <text x="370" y="478" text-anchor="end" font-family="DM Sans, sans-serif" font-weight="600" font-size="10.5" fill="var(--on-navy-3)">2026</text>
-        </svg>
+      <div class="portrait has-photo">
+        <span class="pt-mark" aria-hidden="true">SN<i>K</i></span>
+        <img src="assets/photos/susan-portrait.webp" alt="Susan Njeri Kiarie, smiling, in a red blazer and white shirt" width="960" height="1021" fetchpriority="high">
       </div>
       <figcaption><span>Susan Njeri Kiarie</span><span>Roam Electric · Nairobi, Kenya</span></figcaption>
     </figure>
@@ -758,7 +789,9 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
   <div class="wrap grid12">
     <p class="kicker" style="grid-column:1/-1">What I bring</p>
     <h2 class="statement" id="about-h">I build markets, scale businesses and turn partnerships into <span class="em">measurable growth</span>.</h2>
-    <div class="bio"><p>With 20+ years of experience in commercial leadership, I have worked for start-ups, market leaders and market challengers in Africa, selling to businesses, consumers and government. Today I lead regional sales and operations for energy and charging at Roam Electric in Nairobi.</p><p>My career runs from healthcare through telecommunications and IoT to renewable energy and electric mobility. In each, the work has been to set the commercial direction, open the market, build the team and partner channels, and keep a firm hand on margin, working capital and cost.</p></div>
+    <div class="bio"><p>With 20+ years of experience in commercial leadership, I have worked for start-ups, market leaders and market challengers in Africa, selling to businesses, consumers and government. Today I lead regional sales and operations for energy and charging at Roam Electric in Nairobi.</p><p>My career runs from healthcare through telecommunications and IoT to renewable energy and electric mobility. In each, the work has been to set the commercial direction, open the market, build the team and partner channels, and keep a firm hand on margin, working capital and cost.</p>
+      <figure class="cut-photo rv"><img src="assets/photos/susan-un-nairobi.webp" alt="Susan Njeri Kiarie at the United Nations offices in Nairobi, in a pink patterned dress and white cardigan" width="560" height="1400" loading="lazy"><figcaption>United Nations, Nairobi</figcaption></figure>
+    </div>
     <ul class="pillars"><li class="rv"><h3>Commercial strategy &amp; revenue growth</h3><p>Set the East Africa sales and business development strategy at Sagemcom and delivered US$10M+ in annual contract value.</p></li><li class="rv"><h3>Regional expansion &amp; market development</h3><p>Subsidiaries and offices in Uganda, Tanzania, Burundi and Mozambique, and a branch in Mombasa.</p></li><li class="rv"><h3>Renewable energy &amp; electric mobility</h3><p>Solar leasing and PPAs at ecoligo. EV charging, solar PV and battery storage at Roam Electric.</p></li><li class="rv"><h3>Telecoms, IoT &amp; enterprise technology</h3><p>M2M and IoT channels at Vodafone/Vodacom, operator and vendor accounts across the region, and cybersecurity and IT services.</p></li><li class="rv"><h3>Business transformation &amp; operational excellence</h3><p>Turnaround consultancy that lifted sales revenue by at least 30%, and end-to-end regional operations at Roam Electric.</p></li><li class="rv"><h3>Strategic partnerships &amp; leadership</h3><p>EPC and developer partners, channel partner networks, and teams of 5 to 40 people.</p></li>
     </ul>
   </div>
@@ -851,7 +884,8 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
       </div>
     </div>
 
-    <div class="sig"><span>Why it matters</span><p>Each contract was a power purchase or lease-to-own agreement, so the record year became revenue that recurs. The new Uganda operation added US$6M in deals in its first year.</p></div>
+    <div class="sig"><span>Why it matters</span><p>Each contract was a power purchase or lease-to-own agreement, so the record year became revenue that recurs. The new Uganda operation added US$6M in deals in its first year.</p>
+    </div>
   </div>
 </section>
 <section class="story s-navy grain bg-st-sagemcom" id="story-sagemcom" aria-labelledby="st-sagemcom">
@@ -874,7 +908,8 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
       </div>
     </div>
 
-    <div class="sig"><span>Why it matters</span><p>The share gain came through expansion: a new subsidiary in Uganda and new projects in Tanzania and Zambia, alongside monthly recurring revenue from projects.</p></div>
+    <div class="sig"><span>Why it matters</span><p>The share gain came through expansion: a new subsidiary in Uganda and new projects in Tanzania and Zambia, alongside monthly recurring revenue from projects.</p>
+    </div>
   </div>
 </section>
 <section class="story s-navy grain bg-st-vodafone" id="story-vodafone" aria-labelledby="st-vodafone">
@@ -888,7 +923,8 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
       <div class="rolebox"><span class="role-h">My role</span><ul class="role"><li>Designed and ran direct and indirect M2M and IoT sales channels.</li><li>Recruited channel partners and built a local IoT ecosystem in vertical industries.</li><li>Signed key partners, including Safaricom and Mezzanine, away from the competition.</li></ul></div>
     </div>
 
-    <div class="sig"><span>Recognition</span><p>I was named Best IoT/M2M Sales Person of the Year 2015–2016 at the Vodacom Sales Conference in Sun City, South Africa.</p></div>
+    <div class="sig with-award"><span>Recognition</span><p>I was named Best IoT/M2M Sales Person of the Year 2015–2016 at the Vodacom Sales Conference in Sun City, South Africa.</p><figure class="award rv"><div class="award-frame" data-tilt-card><img src="assets/photos/vodacom-award-2015-2016.webp" alt="Framed Vodacom Award of Excellence 2015–2016 certificate awarded to Susan Kiarie, beside a crystal trophy" width="900" height="984" loading="lazy"></div><figcaption>Vodacom Award of Excellence, 2015–2016</figcaption></figure>
+    </div>
   </div>
 </section>
 <section class="story s-navy grain bg-stool" aria-label="More milestones">
@@ -1116,6 +1152,7 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
       <h2 class="h2" id="lead-h">Building the teams that carry the number.</h2>
       <p class="lede">Across my career I have hired and supervised teams of between 5 and 40 people. I have built teams for new markets and rebuilt struggling ones.</p>
       <div class="lead-big rv"><b>5–40</b><span>people in the teams I have hired and supervised</span></div>
+      <figure class="cut-photo spot rv"><img src="assets/photos/susan-green-skills-summit.webp" alt="Susan Njeri Kiarie at the Africa Green Skills Summit, wearing a conference lanyard" width="760" height="1344" loading="lazy"><figcaption>Africa Green Skills Summit</figcaption></figure>
     </div>
     <div class="lead-r">
       <div class="lead-stats"><div><b>40</b><span>employees recruited at Mobiserve</span></div><div><b>+32 pts</b><span>teamwork and collaboration score, ecoligo team</span></div></div>
@@ -1150,6 +1187,7 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
     <p class="kicker" style="grid-column:1/-1">Contact</p>
     <h2 id="contact-h">Let’s build what comes <span class="em">next.</span></h2>
     <div class="contact-l">
+      <div class="sign"><img src="assets/photos/susan-avatar.webp" alt="" width="72" height="72" loading="lazy"><div><b>Susan Njeri Kiarie</b><span>Regional Sales &amp; Operations Manager, Energy &amp; Charging, Roam Electric</span></div></div>
       <p>I am open to conversations about commercial leadership, strategic partnerships, business growth and opportunities to scale across African markets.</p>
       <ul class="aud" aria-label="Conversations I welcome"><li>Executive search</li><li>Board &amp; advisory roles</li><li>Strategic partnerships</li><li>Market expansion</li></ul>
       <div class="contact-cta">
@@ -1380,6 +1418,19 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
         el.style.setProperty("--rx", (-y * 8).toFixed(2) + "deg");
       });
       host.addEventListener("pointerleave", function () { el.style.setProperty("--ry", "0deg"); el.style.setProperty("--rx", "0deg"); });
+    });
+  }
+
+  /* Award certificate: turns gently toward the pointer */
+  if (!reduce && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    doc.querySelectorAll("[data-tilt-card]").forEach(function (el) {
+      var host = el.parentElement;
+      host.addEventListener("pointermove", function (e) {
+        var r = host.getBoundingClientRect();
+        el.style.setProperty("--ry", (((e.clientX - r.left) / r.width - 0.5) * 16).toFixed(2) + "deg");
+        el.style.setProperty("--rx", (-((e.clientY - r.top) / r.height - 0.5) * 10).toFixed(2) + "deg");
+      });
+      host.addEventListener("pointerleave", function () { el.style.removeProperty("--ry"); el.style.removeProperty("--rx"); });
     });
   }
 
