@@ -732,8 +732,20 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
 @media (prefers-reduced-motion: reduce) { .award-frame { transform: none !important; } }
 @media (max-width: 1020px) {
   .hero-figure { order: -1; margin: 0 0 36px; max-width: 300px; }
-  .hero-figure figcaption { display: none; }
+  .hero-figure figcaption { font-size: 0.62rem; }
 }
+
+/* ---------- Photo fit (v2) ---------- */
+.portrait.has-photo { aspect-ratio: 4 / 5; }
+.portrait.has-photo img { left: 50%; right: auto; width: auto; height: 96%; max-width: none; transform: translateX(-50%); -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 100%); mask-image: linear-gradient(to bottom, #000 80%, transparent 100%); }
+.pt-mark { z-index: 1; }
+.framed-photo { margin: 32px 0 0; max-width: 460px; }
+.fp-img { position: relative; overflow: hidden; border: 1px solid var(--navy-rule); box-shadow: 0 0 0 6px rgba(8, 11, 18, 0.6), 0 0 0 7px rgba(212, 165, 74, 0.45), 0 30px 60px -24px rgba(0, 0, 0, 0.8); aspect-ratio: 1140 / 1390; }
+.fp-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.framed-photo figcaption { margin-top: 18px; font: 600 0.7rem/1.3 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--on-navy-3); display: flex; align-items: center; gap: 10px; }
+.framed-photo figcaption::before { content: ""; width: 22px; height: 1px; background: var(--copper); }
+.bring .bio { min-width: 0; }
+@media (max-width: 1020px) { .framed-photo { max-width: 100%; } }
 
 </style>
 </head>
@@ -775,9 +787,9 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
       <span class="corner tl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
       <div class="portrait has-photo">
         <span class="pt-mark" aria-hidden="true">SN<i>K</i></span>
-        <img src="assets/photos/susan-portrait.webp" alt="Susan Njeri Kiarie, smiling, in a red blazer and white shirt" width="960" height="1021" fetchpriority="high">
+        <img src="assets/photos/susan-green-skills-summit.webp" alt="Susan Njeri Kiarie at the Africa Green Skills Summit in Nairobi" width="760" height="1344" fetchpriority="high">
       </div>
-      <figcaption><span>Susan Njeri Kiarie</span><span>Roam Electric · Nairobi, Kenya</span></figcaption>
+      <figcaption><span>Africa Green Skills Summit</span></figcaption>
     </figure>
     <div class="proof"><div><b class="odo" data-load>20+</b><span>years of experience in commercial leadership</span></div><div><b class="odo" data-load>9</b><span>African markets I have worked in</span></div><div><b class="odo" data-load>5–40</b><span>people in the teams I have led</span></div>
     </div>
@@ -790,7 +802,7 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
     <p class="kicker" style="grid-column:1/-1">What I bring</p>
     <h2 class="statement" id="about-h">I build markets, scale businesses and turn partnerships into <span class="em">measurable growth</span>.</h2>
     <div class="bio"><p>With 20+ years of experience in commercial leadership, I have worked for start-ups, market leaders and market challengers in Africa, selling to businesses, consumers and government. Today I lead regional sales and operations for energy and charging at Roam Electric in Nairobi.</p><p>My career runs from healthcare through telecommunications and IoT to renewable energy and electric mobility. In each, the work has been to set the commercial direction, open the market, build the team and partner channels, and keep a firm hand on margin, working capital and cost.</p>
-      <figure class="cut-photo rv"><img src="assets/photos/susan-un-nairobi.webp" alt="Susan Njeri Kiarie at the United Nations offices in Nairobi, in a pink patterned dress and white cardigan" width="560" height="1400" loading="lazy"><figcaption>United Nations, Nairobi</figcaption></figure>
+      <figure class="framed-photo rv"><div class="fp-img"><img src="assets/photos/susan-un-nairobi.webp" alt="Susan Njeri Kiarie standing in front of the United Nations signboard at the UN offices in Nairobi" width="1140" height="1390" loading="lazy"></div><figcaption>United Nations Office, Nairobi</figcaption></figure>
     </div>
     <ul class="pillars"><li class="rv"><h3>Commercial strategy &amp; revenue growth</h3><p>Set the East Africa sales and business development strategy at Sagemcom and delivered US$10M+ in annual contract value.</p></li><li class="rv"><h3>Regional expansion &amp; market development</h3><p>Subsidiaries and offices in Uganda, Tanzania, Burundi and Mozambique, and a branch in Mombasa.</p></li><li class="rv"><h3>Renewable energy &amp; electric mobility</h3><p>Solar leasing and PPAs at ecoligo. EV charging, solar PV and battery storage at Roam Electric.</p></li><li class="rv"><h3>Telecoms, IoT &amp; enterprise technology</h3><p>M2M and IoT channels at Vodafone/Vodacom, operator and vendor accounts across the region, and cybersecurity and IT services.</p></li><li class="rv"><h3>Business transformation &amp; operational excellence</h3><p>Turnaround consultancy that lifted sales revenue by at least 30%, and end-to-end regional operations at Roam Electric.</p></li><li class="rv"><h3>Strategic partnerships &amp; leadership</h3><p>EPC and developer partners, channel partner networks, and teams of 5 to 40 people.</p></li>
     </ul>
@@ -1152,7 +1164,7 @@ a.tile:focus-visible { outline: 2px solid var(--copper); outline-offset: 8px; }
       <h2 class="h2" id="lead-h">Building the teams that carry the number.</h2>
       <p class="lede">Across my career I have hired and supervised teams of between 5 and 40 people. I have built teams for new markets and rebuilt struggling ones.</p>
       <div class="lead-big rv"><b>5–40</b><span>people in the teams I have hired and supervised</span></div>
-      <figure class="cut-photo spot rv"><img src="assets/photos/susan-green-skills-summit.webp" alt="Susan Njeri Kiarie at the Africa Green Skills Summit, wearing a conference lanyard" width="760" height="1344" loading="lazy"><figcaption>Africa Green Skills Summit</figcaption></figure>
+
     </div>
     <div class="lead-r">
       <div class="lead-stats"><div><b>40</b><span>employees recruited at Mobiserve</span></div><div><b>+32 pts</b><span>teamwork and collaboration score, ecoligo team</span></div></div>
