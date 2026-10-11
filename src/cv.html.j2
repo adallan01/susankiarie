@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><title>{{ p.name }} · Executive CV</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Hanken+Grotesk:wght@500;600;700&display=swap">
+<style>
+@page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+:root { --ink:#111A2B; --soft:#3B4558; --mute:#6A7282; --rule:#D6CFC2; --copper:#8A5536; --night:#0A1426; --flare:#DE9A63; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 9.3pt/1.45 "DM Sans", "Segoe UI", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1,h2,h3,p,ul { margin: 0; padding: 0; } ul { list-style: none; }
+.head { display: grid; grid-template-columns: 1fr auto; gap: 8mm; align-items: end; padding-bottom: 5mm; border-bottom: 1.2pt solid var(--ink); }
+.head h1 { font: 400 30pt/1 "Clash Grotesk", "Hanken Grotesk", sans-serif; letter-spacing: -0.3pt; }
+.head .role { margin-top: 2.5mm; font: 500 7.6pt "DM Sans", sans-serif; letter-spacing: 1pt; text-transform: uppercase; color: var(--copper); }
+.head .contact { text-align: right; font-size: 8.5pt; color: var(--soft); line-height: 1.6; }
+.head .contact b { font-weight: 600; color: var(--ink); }
+.mono { font: 500 7pt "DM Sans", sans-serif; letter-spacing: 1pt; text-transform: uppercase; color: var(--mute); }
+h2.sec { font: 500 7.2pt "DM Sans", sans-serif; letter-spacing: 1.2pt; text-transform: uppercase; color: var(--mute); display: flex; align-items: center; gap: 3mm; margin: 6mm 0 3mm; }
+h2.sec::before { content: ""; width: 7mm; height: 0.8pt; background: var(--copper); }
+.profile { font-size: 10.2pt; line-height: 1.55; color: var(--ink); max-width: 175mm; margin-top: 5mm; }
+.kpis { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 0.6pt solid var(--rule); }
+.kpi { padding: 3mm 3mm 3mm 0; border-bottom: 0.6pt solid var(--rule); }
+.kpi:not(:nth-child(3n+1)) { padding-left: 3mm; border-left: 0.6pt solid var(--rule); }
+.kpi b { display: block; font: 400 19pt/1 "Clash Grotesk", "Hanken Grotesk", sans-serif; }
+.kpi span { display: block; font-size: 8pt; color: var(--soft); margin-top: 1.2mm; line-height: 1.35; }
+.kpi i { display: block; font: normal 500 6.6pt "DM Sans", sans-serif; color: var(--copper); letter-spacing: .6pt; text-transform: uppercase; margin-top: 1.2mm; }
+.note { font-size: 7.4pt; color: var(--mute); margin-top: 1.5mm; }
+.job { display: grid; grid-template-columns: 34mm 1fr; gap: 5mm; padding: 2.6mm 0; border-top: 0.6pt solid var(--rule); break-inside: avoid; }
+.job .when { font: 500 7.2pt/1.5 "DM Sans", sans-serif; color: var(--mute); }
+.job .when em { display: block; font-style: normal; color: var(--copper); margin-top: 1mm; }
+.job h3 { font: 400 13pt/1.15 "Clash Grotesk", "Hanken Grotesk", sans-serif; }
+.job .org { font-weight: 600; font-size: 8.8pt; color: var(--soft); margin-top: .5mm; }
+.job p.sum { margin-top: 1.2mm; color: var(--soft); }
+.job ul { margin-top: 1.2mm; display: grid; gap: .8mm; }
+.job li { position: relative; padding-left: 4mm; }
+.job li::before { content: ""; position: absolute; left: 0; top: 1.9mm; width: 1.6mm; height: 1.6mm; background: var(--copper); transform: rotate(45deg); }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+.edu li { padding: 1.8mm 0; border-top: 0.6pt solid var(--rule); display: grid; grid-template-columns: 22mm 1fr; gap: 3mm; }
+.edu .d { font: 500 7pt "DM Sans", sans-serif; color: var(--copper); padding-top: .6mm; }
+.edu b { font-weight: 600; display: block; } .edu span { color: var(--soft); font-size: 8.4pt; }
+.tags li { padding: 1.8mm 0; border-top: 0.6pt solid var(--rule); }
+.tags b { font: 400 11pt "Clash Grotesk", "Hanken Grotesk", sans-serif; display: block; }
+.tags span { font-size: 8pt; color: var(--soft); }
+.foot { margin-top: 6mm; padding-top: 3mm; border-top: 1.2pt solid var(--ink); display: flex; justify-content: space-between; font: 500 6.8pt "DM Sans", sans-serif; color: var(--mute); letter-spacing: .6pt; text-transform: uppercase; }
+.brk { break-before: page; }
+</style></head>
+<body>
+<header class="head">
+  <div><h1>{{ p.name }}</h1><p class="role">Commercial Leadership · Revenue Growth · Market Expansion</p></div>
+  <div class="contact"><b>{{ p.email }}</b><br>{{ p.phone }}<br>linkedin.com/in/susan-kiarie-6991ba24<br>{{ p.location }}</div>
+</header>
+<p class="profile">Commercial leader with 20+ years of experience and accountability for top-line growth at start-ups, market leaders and market challengers in East Africa, across renewable energy, e-mobility and charging, telecoms and IoT, IT and cybersecurity, FMCG and healthcare. Experienced in commercial strategy, business development and deal closure in B2B, B2C and B2G markets, in opening new markets and subsidiaries, and in leading sales and operations teams of 5 to 40 people. Currently {{ p.currentRole }} at {{ p.currentEmployer }}.</p>
+
+<h2 class="sec">Selected impact</h2>
+<div class="kpis">
+{%- for m in c.impact.featured + c.impact.secondary %}<div class="kpi"><b>{% if m.from is defined %}{{ m.from }}% → {{ m.value }}%{% else %}{{ m.prefix | default('') }}{{ m.value }}{{ m.suffix }}{% endif %}</b><span>{{ m.title }}: {{ m.caption }}</span><i>{{ m.org }} · {{ m.context.split(' · ')[-1] }}</i></div>{% endfor %}
+</div>
+<p class="note">{{ c.impact.note }}</p>
+
+<h2 class="sec">Experience</h2>
+{%- for r in c.career %}
+<div class="job">
+  <div class="when">{{ r.dates }}{% if r.type == 'part' %}<em>Part-time / consultancy</em>{% endif %}</div>
+  <div>
+    <h3>{{ r.title }}</h3><p class="org">{{ r.org }}</p>
+    <p class="sum">{{ r.summary }}</p>
+    {%- set items = (r.wins if r.wins else r.points) %}
+    {%- if items %}<ul>{% for x in items[:3] %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}
+  </div>
+</div>
+{%- endfor %}
+
+<div class="two" style="margin-top:2mm">
+  <div>
+    <h2 class="sec">Education</h2>
+    <ul class="edu">
+      {%- for e in c.education + c.educationExtra %}<li><span class="d">{{ e.date }}</span><div><b>{{ e.award }}</b>{% if e.school %}<span>{{ e.school }}</span>{% endif %}</div></li>{% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2 class="sec">Expertise</h2>
+    <ul class="tags">
+      {%- for e in c.about.pillars %}<li><b>{{ e.t }}</b><span>{{ e.p }}</span></li>{% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="foot"><span>{{ p.name }}</span><span>Executive CV · {{ month }}</span></div>
+</body></html>

@@ -1,0 +1,782 @@
+{
+ "_readme": "Single source of truth for the website. Edit text here, then run `python3 build.py`. Every figure is taken from Susan's CV (April 2026). Do not add figures that are not in the CV.",
+ "person": {
+  "name": "Susan Njeri Kiarie",
+  "shortName": "Susan Kiarie",
+  "monogram": "SNK",
+  "descriptor": "Commercial Strategy · Business Development · Sales & Operations Leadership",
+  "currentRole": "Regional Sales & Operations Manager, Energy & Charging",
+  "currentEmployer": "Roam Electric Limited",
+  "location": "Nairobi, Kenya",
+  "email": "skiarie2001@yahoo.com",
+  "phone": "+254 720 885 260",
+  "phoneHref": "+254720885260",
+  "linkedin": "https://www.linkedin.com/in/susan-kiarie-6991ba24/",
+  "cv": "assets/Susan-Njeri-Kiarie-Executive-CV.pdf",
+  "cvFilename": "Susan-Njeri-Kiarie-Executive-CV.pdf",
+  "portrait": "",
+  "portraitAlt": "Portrait of Susan Njeri Kiarie"
+ },
+ "seo": {
+  "title": "Susan Njeri Kiarie · Commercial Leader, Energy, E-Mobility & Telecoms in Africa",
+  "description": "Susan Njeri Kiarie is a Nairobi-based commercial leader with 20+ years of experience building markets, scaling businesses and driving revenue growth across renewable energy, electric mobility, telecoms and IoT in Africa.",
+  "ogImage": "assets/og-image.png",
+  "canonical": ""
+ },
+ "hero": {
+  "eyebrow": "Commercial leader · 20+ years of experience · Nairobi",
+  "headline": [
+   "Turning market",
+   "opportunity into",
+   "measurable growth."
+  ],
+  "accentLine": 2,
+  "lede": "Strategic commercial leader building markets, scaling businesses and driving sustainable growth across Africa.",
+  "ctaPrimary": "See the impact",
+  "ctaSecondary": "Get in touch",
+  "proof": [
+   {
+    "v": "20+",
+    "l": "years of experience in commercial leadership"
+   },
+   {
+    "v": "9",
+    "l": "African markets in her record of work"
+   },
+   {
+    "v": "5–40",
+    "l": "people in the teams she has led"
+   }
+  ]
+ },
+ "impact": {
+  "featured": [
+   {
+    "id": "rev",
+    "prefix": "US$",
+    "value": 10,
+    "suffix": "M",
+    "title": "Recurring revenue secured",
+    "caption": "Over two years at ecoligo, built on a record 25 new solar contracts signed in a single year.",
+    "org": "ecoligo",
+    "context": "Country Manager, Kenya · 2021–2023"
+   },
+   {
+    "id": "ug",
+    "prefix": "US$",
+    "value": 6,
+    "suffix": "M",
+    "title": "Deals secured in a new market",
+    "caption": "Uganda, in the first year of the new market operation, after registering the subsidiary.",
+    "org": "ecoligo",
+    "context": "Uganda subsidiary · first year"
+   },
+   {
+    "id": "share",
+    "from": 10,
+    "value": 22,
+    "suffix": "%",
+    "title": "Market share growth",
+    "caption": "Energy and telecom business, grown through a new Uganda subsidiary and projects in Tanzania and Zambia.",
+    "org": "Sagemcom Kenya",
+    "context": "Head of Sales / Deputy MD · 2018–2021"
+   }
+  ],
+  "link": "Both ecoligo results came in the same role, 2021–2023: one in Kenya, one in the new Uganda market.",
+  "secondary": [
+   {
+    "prefix": "+",
+    "value": 80,
+    "suffix": "%",
+    "title": "M2M revenue growth",
+    "caption": "Across the East African region.",
+    "org": "Vodafone / Vodacom",
+    "context": "2014–2018"
+   },
+   {
+    "prefix": "+",
+    "value": 50,
+    "suffix": "%",
+    "title": "Billed revenue growth",
+    "caption": "In her first year in the role.",
+    "org": "Mobiserve",
+    "context": "2010–2012"
+   },
+   {
+    "prefix": "",
+    "value": 500,
+    "suffix": "",
+    "title": "Accounts acquired",
+    "caption": "Corporates, SMEs, SoHos and residential customers.",
+    "org": "Zote Telkom",
+    "context": "2009–2010"
+   }
+  ],
+  "note": "Each figure belongs to a separate role and period. They are not cumulative and none of them was achieved at Roam Electric."
+ },
+ "about": {
+  "kicker": "What I bring",
+  "statement": [
+   "I build markets, scale businesses and turn partnerships into ",
+   "measurable growth",
+   "."
+  ],
+  "paragraphs": [
+   "With 20+ years of experience in commercial leadership, I have worked for start-ups, market leaders and market challengers in Africa, selling to businesses, consumers and government. Today I lead regional sales and operations for energy and charging at Roam Electric in Nairobi.",
+   "My career runs from healthcare through telecommunications and IoT to renewable energy and electric mobility. In each, the work has been to set the commercial direction, open the market, build the team and partner channels, and keep a firm hand on margin, working capital and cost."
+  ],
+  "pillars": [
+   {
+    "t": "Commercial strategy & revenue growth",
+    "p": "Set the East Africa sales and business development strategy at Sagemcom and delivered US$10M+ in annual contract value."
+   },
+   {
+    "t": "Regional expansion & market development",
+    "p": "Subsidiaries and offices in Uganda, Tanzania, Burundi and Mozambique, and a branch in Mombasa."
+   },
+   {
+    "t": "Renewable energy & electric mobility",
+    "p": "Solar leasing and PPAs at ecoligo. EV charging, solar PV and battery storage at Roam Electric."
+   },
+   {
+    "t": "Telecoms, IoT & enterprise technology",
+    "p": "M2M and IoT channels at Vodafone/Vodacom, operator and vendor accounts across the region, and cybersecurity and IT services."
+   },
+   {
+    "t": "Business transformation & operational excellence",
+    "p": "Turnaround consultancy that lifted sales revenue by at least 30%, and end-to-end regional operations at Roam Electric."
+   },
+   {
+    "t": "Strategic partnerships & leadership",
+    "p": "EPC and developer partners, channel partner networks, and teams of 5 to 40 people."
+   }
+  ]
+ },
+ "regions": {
+  "intro": "Markets where the CV records direct commercial work. Other African countries are not claimed.",
+  "categories": [
+   {
+    "id": "home",
+    "label": "Home market"
+   },
+   {
+    "id": "built",
+    "label": "Subsidiary, branch or office set up"
+   },
+   {
+    "id": "grew",
+    "label": "Projects and revenue growth"
+   },
+   {
+    "id": "bid",
+    "label": "Bids, tenders and account work"
+   }
+  ],
+  "countries": [
+   {
+    "name": "Kenya",
+    "cat": "home",
+    "evidence": "Nairobi base. GSK accounts across the country. Mombasa branch for Zote Telkom."
+   },
+   {
+    "name": "Uganda",
+    "cat": "built",
+    "evidence": "Subsidiaries for Adrian Kenya, Sagemcom and ecoligo. Kampala office, 2021–23."
+   },
+   {
+    "name": "Tanzania",
+    "cat": "built",
+    "evidence": "Subsidiary for Adrian Kenya. Sagemcom projects. Mobiserve growth."
+   },
+   {
+    "name": "Burundi",
+    "cat": "built",
+    "evidence": "Subsidiary for Adrian Kenya, 2012–14."
+   },
+   {
+    "name": "Mozambique",
+    "cat": "built",
+    "evidence": "Subsidiary for Adrian Kenya, 2012–14."
+   },
+   {
+    "name": "Zambia",
+    "cat": "grew",
+    "evidence": "New projects for Sagemcom, 2018–21."
+   },
+   {
+    "name": "Ethiopia",
+    "cat": "bid",
+    "evidence": "Telecom bids and tenders, Mobiserve and Adrian Kenya."
+   },
+   {
+    "name": "Sudan",
+    "cat": "bid",
+    "evidence": "Telecom bids and tenders, Mobiserve and Adrian Kenya."
+   },
+   {
+    "name": "Central African Rep.",
+    "display": "Central African Republic",
+    "cat": "bid",
+    "evidence": "Telecom bids and tenders, Mobiserve."
+   }
+  ],
+  "title": "Nine markets, one base in Nairobi.",
+  "milestones": [
+   {
+    "when": "2009–10",
+    "org": "Zote Telkom",
+    "what": "Set up the Mombasa branch, which lifted revenues 26%. Built distribution and enterprise sales channels that grew revenues 60%.",
+    "position": "Sales Manager",
+    "highlight": [
+     "Kenya"
+    ],
+    "city": "Mombasa"
+   },
+   {
+    "when": "2012–14",
+    "org": "Adrian Kenya",
+    "what": "Set up functional subsidiaries in Uganda, Tanzania, Burundi and Mozambique. Grew sales 22% in Kenya and 38% in East Africa over two years.",
+    "position": "Account Manager",
+    "highlight": [
+     "Kenya",
+     "Uganda",
+     "Tanzania",
+     "Burundi",
+     "Mozambique"
+    ],
+    "city": null
+   },
+   {
+    "when": "2018–21",
+    "org": "Sagemcom Kenya",
+    "what": "Set up a subsidiary in Uganda and new projects in Tanzania and Zambia.",
+    "position": "Head of Sales / Deputy Managing Director",
+    "highlight": [
+     "Kenya",
+     "Uganda",
+     "Tanzania",
+     "Zambia"
+    ],
+    "city": null
+   },
+   {
+    "when": "2021–23",
+    "org": "ecoligo",
+    "what": "Registered the Uganda subsidiary and opened the Kampala branch office. US$6M in deals in year one.",
+    "position": "Country Manager, Kenya",
+    "highlight": [
+     "Kenya",
+     "Uganda"
+    ],
+    "city": "Kampala"
+   }
+  ],
+  "stepsTitle": "Opening new markets, role after role."
+ },
+ "career": [
+  {
+   "title": "Regional Sales & Operations Manager, Energy & Charging",
+   "org": "Roam Electric Limited",
+   "dates": "March 2026 – Present",
+   "start": 2026.17,
+   "end": null,
+   "type": "full",
+   "summary": "Leads regional revenue growth across electric vehicle and energy sales and operations.",
+   "points": [
+    "Oversees end-to-end regional performance: sales delivery, inventory, service operations, financial performance and infrastructure.",
+    "Accountable for sales execution, operational efficiency, service reliability and cost discipline."
+   ],
+   "wins": []
+  },
+  {
+   "title": "BDM Lead, Energy & Charging",
+   "org": "Roam Electric Limited",
+   "dates": "January 2025 – February 2026",
+   "start": 2025.0,
+   "end": 2026.17,
+   "type": "full",
+   "summary": "Led sales and business development across renewable energy distribution, EPC and e-mobility.",
+   "points": [
+    "Developed EV charging infrastructure: stations, software-as-a-service, C&I and residential solar PV, and battery storage.",
+    "Secured and grew EV charging hubs and fast-charging points for Roam in the region.",
+    "Managed stakeholder and partner relationships across e-mobility and renewable energy."
+   ],
+   "wins": []
+  },
+  {
+   "title": "Director, Marketing & Sales",
+   "org": "Applied Principles Consulting",
+   "dates": "November 2023 – January 2026",
+   "start": 2023.83,
+   "end": 2026.08,
+   "type": "part",
+   "summary": "Marketing and sales leadership for a firm delivering cybersecurity, digital forensics, IT audit and managed security services.",
+   "points": [],
+   "wins": [
+    "Part of the consultancy turnaround work described under Selected impact: sales revenues up at least 30%."
+   ]
+  },
+  {
+   "title": "Chief Commercial Officer",
+   "org": "Power-Wiz Electro Limited",
+   "dates": "November 2023 – December 2025",
+   "start": 2023.83,
+   "end": 2026.0,
+   "type": "part",
+   "summary": "Commercial lead for GSM telecoms, electrical, mechanical and civil works, solar PV and water infrastructure projects in East and Sub-Saharan Africa.",
+   "points": [],
+   "wins": [
+    "Part of the consultancy turnaround work described under Selected impact: sales revenues up at least 30%."
+   ]
+  },
+  {
+   "title": "Country Manager",
+   "org": "ecoligo GmbH, Kenya",
+   "dates": "July 2021 – October 2023",
+   "start": 2021.5,
+   "end": 2023.83,
+   "type": "full",
+   "summary": "Ran ecoligo's East African business, taking solar leasing and PPA projects with commercial and industrial clients to signature.",
+   "points": [
+    "Led the East African sales team, CRM and country reporting to leadership.",
+    "Responsible for HR, administration and legal work in East Africa.",
+    "Built partnerships with EPC and project developer partners."
+   ],
+   "wins": [
+    "US$10M in recurring revenue over two years, from a record 25 new solar contracts in one year.",
+    "Registered the Uganda subsidiary and secured US$6M in deals in its first year.",
+    "Signed a 6MW C&I PPA with a steel company in Kenya, one of the largest of its kind.",
+    "Team Work Health Index up 10 points; teamwork and collaboration up 32 points."
+   ]
+  },
+  {
+   "title": "Head of Sales / Deputy Managing Director",
+   "org": "Sagemcom Kenya Ltd",
+   "dates": "March 2018 – June 2021",
+   "start": 2018.17,
+   "end": 2021.5,
+   "type": "full",
+   "summary": "Set the business development and sales strategy for East Africa and led transformation in Grid Infrastructure Services.",
+   "points": [
+    "Delivered targets for sales, operations, margin, working capital, turnover, receivables and expense control.",
+    "Led bids, tenders and project management with telecom and energy vendors and operators in Sub-Saharan Africa."
+   ],
+   "wins": [
+    "Grew market share from 10% to 22% through a new subsidiary in Uganda and projects in Tanzania and Zambia.",
+    "Delivered US$10M+ in annual total contract value in the region.",
+    "Structured and negotiated project financing for renewable energy projects."
+   ]
+  },
+  {
+   "title": "Principal Sales Specialist",
+   "org": "Vodafone / Vodacom",
+   "dates": "October 2014 – February 2018",
+   "start": 2014.75,
+   "end": 2018.08,
+   "type": "full",
+   "summary": "Built the M2M and IoT sales business across East Africa through direct and partner channels.",
+   "points": [
+    "Designed and ran direct and indirect M2M/IoT sales channels.",
+    "Recruited channel partners and built a local IoT ecosystem in vertical industries."
+   ],
+   "wins": [
+    "M2M revenues up 80% in East Africa.",
+    "Award of Excellence: Best IoT/M2M Sales Person of the Year 2015–2016.",
+    "Total sales revenue up 73.1%; distribution turnover up 51.1%; retail account base up 115%."
+   ]
+  },
+  {
+   "title": "Account Manager",
+   "org": "Adrian Kenya Ltd",
+   "dates": "August 2012 – September 2014",
+   "start": 2012.58,
+   "end": 2014.75,
+   "type": "full",
+   "summary": "Account management, bids and business development with telecom operators and vendors across Sub-Saharan Africa.",
+   "points": [
+    "Worked with operators and vendors including Huawei, Ericsson, Safaricom, Airtel and MTN.",
+    "Handled RFIs, RFPs, proposals, negotiation and contract execution."
+   ],
+   "wins": [
+    "Formulated a go-to-market strategy that delivered consistent sales objectives.",
+    "Grew sales 22% in Kenya and 38% in East Africa over two years.",
+    "Set up subsidiaries in Uganda, Tanzania, Burundi and Mozambique."
+   ]
+  },
+  {
+   "title": "Commercial Manager",
+   "org": "Mobiserve, Kenya",
+   "dates": "November 2010 – July 2012",
+   "start": 2010.83,
+   "end": 2012.58,
+   "type": "full",
+   "summary": "Commercial, business development and project management for telecom deployment work.",
+   "points": [
+    "Recruited and hired 40 employees; led the regional commercial team.",
+    "Managed subcontractors, cost control, working capital and cash-flow forecasting."
+   ],
+   "wins": [
+    "Grew billed revenue 50% in the first year (34% in Kenya, 18% in Uganda and Tanzania)."
+   ]
+  },
+  {
+   "title": "Sales Manager",
+   "org": "Zote Telkom",
+   "dates": "July 2009 – October 2010",
+   "start": 2009.5,
+   "end": 2010.83,
+   "type": "full",
+   "summary": "Led sales of internet services, modems and SIM cards at the company formerly known as Net@home Wireless Networks.",
+   "points": [
+    "Coached the sales team and led account planning for retention and acquisition."
+   ],
+   "wins": [
+    "Acquired a portfolio of 500 accounts: corporates, SMEs, SoHos and residential.",
+    "Built distribution and enterprise channels that grew revenues 60%.",
+    "Set up the Mombasa branch, lifting revenues 26%."
+   ]
+  },
+  {
+   "title": "Partner Sales Representative",
+   "org": "GlaxoSmithKline",
+   "dates": "May 2005 – June 2008",
+   "start": 2005.33,
+   "end": 2008.5,
+   "type": "full",
+   "summary": "Full-cycle sales of OTC and healthcare products.",
+   "points": [
+    "Trained new employees and contributed to event marketing and brand promotion."
+   ],
+   "wins": [
+    "Grew the customer base 64% by opening new accounts across Kenya.",
+    "Sustained monthly sales of KES 5M for the OTC and healthcare range."
+   ]
+  }
+ ],
+ "leadership": {
+  "kicker": "Leadership",
+  "title": "Building the teams that carry the number.",
+  "intro": "Across her career Susan has hired and supervised teams of between 5 and 40 people, and has built teams for new markets and rebuilt struggling ones.",
+  "stats": [
+   {
+    "v": "5–40",
+    "l": "people in the teams she has hired and supervised"
+   },
+   {
+    "v": "40",
+    "l": "employees recruited at Mobiserve"
+   },
+   {
+    "v": "+32 pts",
+    "l": "teamwork and collaboration score, ecoligo team"
+   }
+  ],
+  "items": [
+   {
+    "h": "Coaching and mentoring",
+    "p": "Coached and mentored sales staff at Mobiserve and Zote Telkom. At ecoligo, cut process bottlenecks by training the team on practices, procedures and performance."
+   },
+   {
+    "h": "Engagement",
+    "p": "Raised her ecoligo team's Work Health Index by 10 points over two years. Worked with HR to streamline hiring and onboarding and to improve welfare through allowances and rewards."
+   },
+   {
+    "h": "Restructuring",
+    "p": "Restructured commercial teams in her consultancy roles to bring in new talent, reach new markets and build capabilities."
+   },
+   {
+    "h": "New-market teams",
+    "p": "Put people and offices in place for new subsidiaries and branches in Uganda, Tanzania, Burundi, Mozambique and Mombasa."
+   },
+   {
+    "h": "Partners and vendors",
+    "p": "Managed customer, vendor and partner relationships daily, from EPC partners at ecoligo to channel partners at Vodacom, and negotiated acquisitions of competitor companies."
+   },
+   {
+    "h": "Financial discipline",
+    "p": "Set budgets with controls, managed working capital and receivables at Sagemcom, and improved cash positions through better margins and credit terms."
+   }
+  ]
+ },
+ "education": [
+  {
+   "award": "Master of Business Administration (MBA), Strategic Management",
+   "school": "Daystar University",
+   "date": "June 2019"
+  },
+  {
+   "award": "Bachelor of Business (Hons), Business Administration",
+   "school": "Limkokwing University of Creative Technology, Malaysia",
+   "date": "October 2010"
+  },
+  {
+   "award": "Associate Degree, Marketing · Diploma, Advanced Diploma and Graduate Diploma, Marketing",
+   "school": "Graffins College, Nairobi",
+   "date": "March 2009"
+  },
+  {
+   "award": "Advanced Diploma, Business Management",
+   "school": "Graffins College",
+   "date": "December 2008"
+  },
+  {
+   "award": "Diploma, Public Relations",
+   "school": "Graffins College",
+   "date": "June 2007"
+  }
+ ],
+ "educationExtra": [
+  {
+   "award": "Introduction to German A1",
+   "school": "",
+   "date": "June 2008"
+  },
+  {
+   "award": "Certificate in Computer Application",
+   "school": "Northern Heritage Computer College",
+   "date": "May 2004"
+  }
+ ],
+ "insights": [],
+ "_insightsHelp": "To publish articles, interviews or talks, add objects like {\"type\":\"Article\",\"title\":\"...\",\"outlet\":\"...\",\"date\":\"2026-11-01\",\"url\":\"https://...\",\"summary\":\"...\"}. The Insights section and its nav link appear automatically once this list has at least one item.",
+ "contact": {
+  "title": "Let's build what comes next.",
+  "lede": "Open to conversations around commercial leadership, strategic partnerships, business growth and opportunities to scale across African markets.",
+  "audiences": [
+   "Executive search",
+   "Board & advisory roles",
+   "Strategic partnerships",
+   "Market expansion"
+  ]
+ },
+ "impactHead": {
+  "title": "Results with a name, a date and a market.",
+  "lede": "Six outcomes from six different roles, each labelled with the organisation and period it belongs to."
+ },
+ "stories": {
+  "title": "Commercial milestones",
+  "lede": "Selected chapters from Susan's career, told through the outcomes recorded in her CV.",
+  "features": [
+   {
+    "id": "ecoligo",
+    "layout": "flow",
+    "org": "ecoligo GmbH",
+    "period": "Jul 2021 – Oct 2023",
+    "title": [
+     "Building a ",
+     "US$10M",
+     " recurring revenue pipeline."
+    ],
+    "context": "ecoligo's East African business takes solar leasing and solar PPA projects with commercial and industrial clients from pipeline to contract signature. Susan ran it as Country Manager, with responsibility for growth into nearby markets.",
+    "flow": [
+     {
+      "v": "25",
+      "l": "new solar contracts in one year, a record"
+     },
+     {
+      "v": "US$10M",
+      "l": "recurring revenue over two years"
+     }
+    ],
+    "flow2": [
+     {
+      "v": "Uganda",
+      "l": "subsidiary registered, Kampala office opened"
+     },
+     {
+      "v": "US$6M",
+      "l": "in deals in the first year"
+     }
+    ],
+    "extra": {
+     "v": "6MW",
+     "l": "C&I PPA for a steel company in Kenya, one of the largest signed"
+    },
+    "significance": "Each contract was a power purchase or lease-to-own agreement, so the record year became revenue that recurs. The new Uganda operation added US$6M in deals in its first year.",
+    "did": [
+     "Led, coached and supervised the East African sales team.",
+     "Built long-term partnerships with EPC and project developer partners.",
+     "Registered the Uganda subsidiary and opened a branch office in Kampala."
+    ],
+    "position": "Country Manager, Kenya"
+   },
+   {
+    "id": "sagemcom",
+    "layout": "bars",
+    "org": "Sagemcom Kenya Ltd",
+    "period": "Mar 2018 – Jun 2021",
+    "title": [
+     "More than ",
+     "doubling",
+     " market share."
+    ],
+    "context": "Susan defined Sagemcom Kenya's business development and sales strategy for East Africa and led change across its Grid Infrastructure Services department, working with telecom and energy operators across Sub-Saharan Africa.",
+    "bars": {
+     "from": 10,
+     "to": 22,
+     "label": "Market share, energy and telecom business"
+    },
+    "markets": [
+     "Uganda · subsidiary",
+     "Tanzania · projects",
+     "Zambia · projects"
+    ],
+    "stats": [
+     {
+      "v": "US$10M+",
+      "l": "annual total contract value in the region"
+     }
+    ],
+    "significance": "The share gain came through expansion: a new subsidiary in Uganda and new projects in Tanzania and Zambia, alongside monthly recurring revenue from projects.",
+    "did": [
+     "Set up new subsidiaries in Uganda and new projects in Tanzania, Zambia and other markets.",
+     "Structured and negotiated project financing for renewable energy projects.",
+     "Led deals from origination and negotiation through execution and invoicing."
+    ],
+    "position": "Head of Sales / Deputy Managing Director"
+   },
+   {
+    "id": "vodafone",
+    "layout": "wide",
+    "org": "Vodafone / Vodacom",
+    "period": "Oct 2014 – Feb 2018",
+    "title": [
+     "Building an ",
+     "IoT sales channel",
+     " across East Africa."
+    ],
+    "context": "Susan grew the IoT and M2M pipelines of Vodacom Business Kenya and Safaricom, selling connectivity and connected-product solutions to enterprise and partner customers.",
+    "stats": [
+     {
+      "v": "+80%",
+      "l": "M2M revenues, East Africa"
+     },
+     {
+      "v": "+73.1%",
+      "l": "total regional sales revenue"
+     },
+     {
+      "v": "+51.1%",
+      "l": "distribution turnover"
+     },
+     {
+      "v": "+115%",
+      "l": "regional retail account base"
+     }
+    ],
+    "significance": "Named Best IoT/M2M Sales Person of the Year 2015–2016 at the Vodacom Sales Conference in Sun City, South Africa.",
+    "did": [
+     "Designed and ran direct and indirect M2M and IoT sales channels.",
+     "Recruited channel partners and built a local IoT ecosystem in vertical industries.",
+     "Signed key partners, including Safaricom and Mezzanine, away from the competition."
+    ],
+    "position": "Principal Sales Specialist"
+   }
+  ],
+  "compact": [
+   {
+    "id": "turnaround",
+    "org": "Applied Principles Consulting · Power-Wiz Electro",
+    "role": "Director, Marketing & Sales · Chief Commercial Officer",
+    "period": "Nov 2023 – Jan 2026 · part-time consultancy",
+    "title": "Returning businesses to growth.",
+    "v": "30%+",
+    "vl": "increase in sales revenue",
+    "text": "Consultancy work with East African businesses facing losses, liquidity constraints, customer flight, bad debts and low employee engagement. Susan restructured commercial teams, reallocated resources, tightened financial controls and improved cash through better margins and credit terms.",
+    "significance": "Set the East Africa businesses on a path to profitability."
+   },
+   {
+    "id": "mobiserve",
+    "org": "Mobiserve, Kenya",
+    "role": "Commercial Manager",
+    "period": "Nov 2010 – Jul 2012",
+    "title": "Growing billed revenue by half in year one.",
+    "v": "+50%",
+    "vl": "billed revenue, first year",
+    "text": "Susan prioritised growth into new markets, opened new accounts with telecom vendors and operators, and recruited 40 employees while leading the regional commercial team.",
+    "split": [
+     {
+      "v": "34%",
+      "l": "Kenya"
+     },
+     {
+      "v": "18%",
+      "l": "Uganda and Tanzania"
+     }
+    ],
+    "significance": "The CV breaks the 50% down as 34% in Kenya and 18% in Uganda and Tanzania."
+   }
+  ]
+ },
+ "organisations": {
+  "title": "Where I’ve made an impact.",
+  "lede": "Ten organisations across energy, e-mobility, telecoms, technology and healthcare. Drag, swipe or use the arrows to turn the gallery; select a logo to visit the company’s site.",
+  "disclaimer": "Logos identify Susan's past and present employers. They are trademarks of their owners and do not imply endorsement.",
+  "items": [
+   {
+    "name": "Roam Electric",
+    "logo": "assets/logos/roam.png",
+    "h": 30,
+    "url": "https://www.roam-electric.com/"
+   },
+   {
+    "name": "ecoligo",
+    "logo": "assets/logos/ecoligo.png",
+    "h": 44,
+    "url": "https://www.ecoligo.com/"
+   },
+   {
+    "name": "Sagemcom",
+    "logo": "assets/logos/sagemcom.png",
+    "h": 84,
+    "url": "https://www.sagemcom.com/"
+   },
+   {
+    "name": "Vodafone / Vodacom",
+    "logo": "assets/logos/vodafone.png",
+    "h": 42,
+    "url": "https://www.vodafone.com/"
+   },
+   {
+    "name": "Applied Principles Consulting",
+    "logo": "assets/logos/applied-principles.png",
+    "h": 56,
+    "url": "https://www.appliedprinciples.co.ke/"
+   },
+   {
+    "name": "Power-Wiz Electro",
+    "logo": "assets/logos/power-wiz.png",
+    "h": 48,
+    "url": "https://power-wiz.co.ke/"
+   },
+   {
+    "name": "Adrian Kenya",
+    "logo": "assets/logos/adrian.png",
+    "h": 40,
+    "url": ""
+   },
+   {
+    "name": "Mobiserve",
+    "logo": "assets/logos/mobiserve.png",
+    "h": 36,
+    "url": "https://www.mobiserveholding.com/"
+   },
+   {
+    "name": "Zote Telkom",
+    "logo": "",
+    "h": 0,
+    "url": ""
+   },
+   {
+    "name": "GlaxoSmithKline",
+    "logo": "assets/logos/gsk.png",
+    "h": 60,
+    "url": "https://www.gsk.com/"
+   }
+  ]
+ },
+ "educationHead": {
+  "title": "The foundation behind the strategy.",
+  "lede": "Strategic management, business administration and marketing underpin a career built around commercial growth, market development and business leadership."
+ }
+}
